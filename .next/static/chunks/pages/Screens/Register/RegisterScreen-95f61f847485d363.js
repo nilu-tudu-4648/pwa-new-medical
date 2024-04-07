@@ -1,0 +1,1 @@
+(self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[936],{4820:function(n,e,_){(window.__NEXT_P=window.__NEXT_P||[]).push(["/Screens/Register/RegisterScreen",function(){return _(5704)}])}},function(n){n.O(0,[664,873,171,824,704,774,888,179],function(){return n(n.s=4820)}),_N_E=n.O()}]);

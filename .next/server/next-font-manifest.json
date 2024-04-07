@@ -1,0 +1,9 @@
+{
+  "pages": {
+    "/Screens/Tutorial/TutorialScreen": [],
+    "/tutorial": []
+  },
+  "app": {},
+  "appUsingSizeAdjust": false,
+  "pagesUsingSizeAdjust": false
+}

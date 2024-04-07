@@ -1,0 +1,230 @@
+.OncoChatTopBar-main-container {
+  background: #f8fbff;
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  padding: 16px;
+  align-items: center;
+  z-index: 9999 !important;
+  position: relative;
+}
+.oncoChat-back-button {
+  cursor: pointer;
+  margin-bottom: 5px;
+}
+.oncoChat_display_image_container {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  background-color: black;
+}
+.oncoChat_display_image_container img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+.oncoChat_display_text_container h1 {
+  color: #11245b;
+  text-align: center;
+  font-family: "Inter", sans-serif !important;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+
+@media only screen and (min-width: 0px) and (max-width: 707px) {
+  .onCoChat-footer-button-container{
+    margin-right:0px;
+  }
+  .oncoChat-main-12 {
+    padding: 0%;
+  }
+  .OncoChatBody-main-container {
+    background: #fff;
+    width: 100%;
+    height: calc(100vh - 100px);
+    overflow-y: scroll;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    padding-top: 80px !important;
+  }
+}
+@media only screen and (min-width: 800px) and (max-width: 3267px) {
+  .onCoChat-footer-button-container{
+    margin-right: 20px;
+  }
+  .OncoChatTopFooter-main-container {
+    width: 100% !important;
+  }
+  .OncoChatBody-main-container {
+    background: #fff;
+    width: 100%;
+    height: calc(100vh - 0px);
+    overflow-y: scroll;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    padding-top: 100px !important;
+  }
+}
+.OncoChatTopFooter-main-container {
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+  padding: 16px;
+  background: #f8fbff;
+  z-index: 999;
+  box-shadow: 0px -5px 5px rgba(0, 0, 0, 0.1);
+  overflow: hidden !important;
+  touch-action: manipulation !important;
+}
+
+.OncoChatTopFooter-input-container {
+  width: 80%;
+}
+.OncoChatTopFooter-input::-webkit-scrollbar {
+  display: none;
+}
+.OncoChatTopFooter-image-container {
+  width: 48px;
+  height: 48px;
+  border-radius: 40px;
+  background: #11245b;
+  text-align: center;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin-left: 20px;
+  margin-top: 0px;
+  padding-right: 5px;
+}
+
+.OncoChatBody-main-container::-webkit-scrollbar {
+  display: none;
+}
+.OncoChatBody-inner-colored-avatar {
+  background-color: #586dd9;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+.OncoChatBody-inner-colored-avatar i {
+  color: white;
+}
+.OncoChatBody-inner-container {
+  background: #fff;
+  width: 100%;
+  height: auto;
+  display: flex;
+  padding: 16px;
+}
+.OncoChatBody-inner-container span {
+  margin: 0%;
+  margin-left: 10px;
+  color: #000;
+  font-family: "Inter", sans-serif !important;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+}
+.OncoChatBody-user-chat {
+  display: flex;
+  padding: 16px 24px 16px 16px;
+  float: right !important;
+  justify-content: flex-end;
+  background: #f4f6f8;
+  width: 100%;
+}
+.OncoChatBody-user-chat span {
+  margin: 0%;
+  text-align: right;
+  margin-right: 10px;
+  color: #000;
+  font-family: "Inter", sans-serif !important;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  margin-top: 5px;
+}
+.OncoChatBody-inner-colored-avatar-image-container {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+}
+.OncoChatBody-inner-colored-avatar-image-container img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-top: 0px;
+}
+
+.chat-bubble {
+  background-color: #e6f8f1;
+  padding: 16px 28px;
+  -webkit-border-radius: 20px;
+  -webkit-border-bottom-left-radius: 2px;
+  -moz-border-radius: 20px;
+  -moz-border-radius-bottomleft: 2px;
+  border-radius: 20px;
+  border-bottom-left-radius: 2px;
+  display: inline-block;
+}
+.typing {
+  align-items: center;
+  display: flex;
+  height: 17px;
+  margin-top: 15px;
+}
+.typing .dot {
+  animation: mercuryTypingAnimation 1.8s infinite ease-in-out;
+  background-color: #002aff;
+  border-radius: 50%;
+  height: 7px;
+  margin-right: 4px;
+  vertical-align: middle;
+  width: 7px;
+  display: inline-block;
+}
+.typing .dot:nth-child(1) {
+  animation-delay: 200ms;
+}
+.typing .dot:nth-child(2) {
+  animation-delay: 300ms;
+}
+.typing .dot:nth-child(3) {
+  animation-delay: 400ms;
+}
+.typing .dot:last-child {
+  margin-right: 0;
+}
+
+@keyframes mercuryTypingAnimation {
+  0% {
+    transform: translateY(0px);
+    background-color: #002aff;
+  }
+  28% {
+    transform: translateY(-7px);
+    background-color: #304fe8;
+  }
+  100% {
+    transform: translateY(0px);
+    background-color: #6478db;
+  }
+}
